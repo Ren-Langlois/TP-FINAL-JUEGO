@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ParedesMovement : MonoBehaviour
 {
-    public float WallSpeed;
+    public float WallSpeed = 0.1f;
     public int pose = -30;
+    float tiempo = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +18,18 @@ public class ParedesMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0, 0, WallSpeed);
-
-        while (transform.position.z < pose)
+        if (Time.time >= tiempo +6)
         {
-            transform.position += new Vector3(-3, 3, 150);
+
+
+            transform.position -= new Vector3(0, 0, WallSpeed);
+
+            while (transform.position.z < pose)
+            {
+                transform.position += new Vector3(0, 0, 300);
+                WallSpeed += 0.1f;
+                
+            }
         }
     }
   

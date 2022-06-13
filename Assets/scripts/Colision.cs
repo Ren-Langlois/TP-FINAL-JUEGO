@@ -24,7 +24,8 @@ public class Colision : MonoBehaviour
         if (col.gameObject.name == "DeathWall")
         {
             //Destroy(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Perdiste");
         }
     }
     
