@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Colision : MonoBehaviour
 {
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,8 @@ public class Colision : MonoBehaviour
             //Destroy(gameObject);
             // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("Perdiste");
+            
+
         }
     }
     

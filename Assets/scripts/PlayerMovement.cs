@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (transform.position.y <= -1)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene("Perdiste"); ;
             }
         }
     }
